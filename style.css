@@ -1,0 +1,98 @@
+.business-card {
+    container-type: inline-size;
+    position: relative;
+    width: min(100vw, 175vh);   /* fills width UNLESS height runs out first */
+    aspect-ratio: 1.75;
+    background-color: #fbfbf9;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 4%;
+    box-sizing: border-box;
+}
+
+.business-card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.business-card a:hover {
+    text-decoration: underline;
+}
+
+.business-card h1 {
+    font-size: clamp(24px, 6.5cqw, 140px);   /* raised the max cap */
+    margin: 0;
+    white-space: nowrap;
+}
+
+.top-left {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    font-size: clamp(14px, 2.8cqw, 34px);
+}
+
+.top-right {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    text-align: center;
+}
+
+.top-right a {
+    display: block;
+    font-size: clamp(13px, 2.4cqw, 30px);
+}
+
+.top-right p {
+    display: block;
+    margin: 4px 0 0;
+    font-size: clamp(11px, 1.8cqw, 22px);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+.center .mgm-email-link {
+    font-size: clamp(16px, 2.6cqw, 32px);
+}
+
+.bottom {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: clamp(14px, 2.2cqw, 28px);
+    width: 92%;
+    white-space: normal;
+    line-height: 1.4;
+}
+
+.bottom p,
+.bottom a {
+    display: inline;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fbfbf9;
+    padding: 0;
+    box-sizing: border-box;
+}
